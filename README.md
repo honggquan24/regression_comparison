@@ -13,16 +13,17 @@ This project provides a **comprehensive benchmark** of regression algorithms—i
   * Analytical: Faster on small to moderate datasets  
   * Numerical: Scalable for high-dimensional, large datasets  
 
-| Model                          | R² Score     | MAE    | RMSE    | Overfitting | Notes |
-|--------------------------------|-------------|--------|---------|-------------|-------|
-| **Linear Regression (scikit-learn)** | 0.87–0.89   | ~0.19  | 0.25691 | Slight      | Stable baseline; captures linear trends well |
-| **Linear Regression (Keras)**        | ~0.63       | ~0.28  | 0.33366 | Severe      | Underfitting; poor convergence due to LR/epochs |
-| **Ridge Regression (scikit-learn)**  | ~0.85       | ~0.20  | 0.17050 | Minimal     | L2 helps stability; modest improvement |
-| **Ridge Regression (Keras)**         | ~0.63       | ~0.27  | 0.24580 | Underfitting | Optimization issues; needs tuning |
-| **Lasso Regression (scikit-learn)**  | ~0.89       | ~0.17  | 0.13459 | Low         | Strong feature selection; excellent generalization |
-| **Lasso Regression (Keras)**         | ~0.89       | ~0.17  | 0.15724 | Low         | Better than other Keras models; slight tuning gap |
-| **ElasticNet (scikit-learn)**        | ~0.89       | ~0.17  | 0.13396 | Very low    | Best balance of L1 + L2; top performer |
-| **ElasticNet (Keras)**               | ~0.89       | ~0.17  | 0.14579 | Low         | Solid, but suboptimal training vs. scikit-learn |
+| Model                          | R² Score     | MAE    | RMSE    | Kaggle Score | Overfitting | Notes |
+|--------------------------------|-------------|--------|---------|--------------|-------------|-------|
+| **Linear Regression (scikit-learn)** | 0.87–0.89   | ~0.19  | 0.25691 | **0.25691**  | Slight      | Stable baseline; captures linear trends well |
+| **Linear Regression (Keras)**        | ~0.63       | ~0.28  | 0.33366 | **0.33366**  | Severe      | Underfitting; poor convergence due to LR/epochs |
+| **Ridge Regression (scikit-learn)**  | ~0.85       | ~0.20  | 0.17050 | **0.17050**  | Minimal     | L2 helps stability; modest improvement |
+| **Ridge Regression (Keras)**         | ~0.63       | ~0.27  | 0.24580 | **0.24580**  | Underfitting | Optimization issues; needs tuning |
+| **Lasso Regression (scikit-learn)**  | ~0.89       | ~0.17  | 0.13459 | **0.13459**  | Low         | Strong feature selection; excellent generalization |
+| **Lasso Regression (Keras)**         | ~0.89       | ~0.17  | 0.15724 | **0.15724**  | Low         | Better than other Keras models; slight tuning gap |
+| **ElasticNet (scikit-learn)**        | ~0.89       | ~0.17  | 0.13396 | **0.13396**  | Very low    | Best balance of L1 + L2; top performer |
+| **ElasticNet (Keras)**               | ~0.89       | ~0.17  | 0.14579 | **0.14579**  | Low         | Solid, but suboptimal training vs. scikit-learn |
+
 
 ### Visualization (Optional)
 Plots can be generated to visualize:
